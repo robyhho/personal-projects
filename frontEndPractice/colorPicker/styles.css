@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background-color: teal;
+}
+
+.diffBtn {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  color: black;
+  padding: 1em;
+}
+
+.diffBtn:hover {
+  cursor: pointer;
+}
+
+main {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.title {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.subtitle {
+  margin: 2em;
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+}
+
+h2 span {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.colorContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.colorSquare {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.colorSquare:hover {
+  cursor: pointer;
+}
+
+.resultText,
+.playBtn {
+  display: none;
+}
+.resultText {
+  font-size: 2em;
+  padding: 2em 0em 1em 0em;
+}
+
+.playBtn {
+  width: 150px;
+  color: black;
+  height: 50px;
+}
