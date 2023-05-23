@@ -1,7 +1,6 @@
 //VARIABLES
 let currentHex = "";
 let ansSquare = 0;
-let difficulty = 0;
 
 //GETTERS
 const hexColor = document.getElementById("hexColor");
@@ -10,7 +9,6 @@ const square2 = document.getElementById("color2");
 const square3 = document.getElementById("color3");
 const resultText = document.getElementById("resultText");
 const playBtn = document.getElementById("playBtn");
-const diffBtn = document.getElementById("diffBtn");
 
 //SETTERS
 square1.addEventListener("click", handleClick);
@@ -18,7 +16,7 @@ square2.addEventListener("click", handleClick);
 square3.addEventListener("click", handleClick);
 
 playBtn.addEventListener("click", resetGame);
-diffBtn.addEventListener("click", changeDiff);
+
 //FUNCTIONS
 
 function randomHex() {
@@ -84,11 +82,6 @@ function startGame() {
   }
 }
 
-function changeDiff() {
-  if (difficulty == 0) {
-    console.log("WHA");
-  }
-}
 //FUNCTION CALLS
 
-startGame(0);
+startGame();
