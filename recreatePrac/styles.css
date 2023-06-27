@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(247, 190, 147, 0),
+    rgb(247, 190, 147, 1)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+nav {
+  margin: 0 4em;
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.center a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-btn {
+  margin: 1em;
+  padding: 0.5em 1em;
+  border: 1px solid black;
+  border-radius: 50px;
+  background: none;
+}
+
+.wrapper {
+  margin: 4em 4em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.header-btn {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+  width: fit-content;
+  font-size: 1.1em;
+}

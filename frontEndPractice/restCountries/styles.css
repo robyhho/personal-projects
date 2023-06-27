@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: rgb(244, 244, 244);
+}
+
+/* Header styles */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  min-height: 5em;
+  background-color: white;
+  box-shadow: rgba(43, 43, 54, 0.15) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.1) 0px 3px 7px -3px;
+  padding-top: 0.5em;
+}
+
+header h1 {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-right h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+  padding-left: 0.5em;
+}
+
+/* Main styles */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main Search Styles */
+
+.main-input-mag {
+  position: relative;
+  left: 1em;
+  top: 2em;
+}
+
+.main-search-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-search {
+  height: 3em;
+  margin-top: 0.25em;
+  padding-left: 4em;
+  width: 90vw;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(43, 43, 54, 0.15) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.1) 0px 3px 7px -3px;
+}
+
+/* DropDown Styles */
+.dropdown-container {
+  align-self: flex-start;
+}
+
+.dropdown-btn {
+  font-size: 1em;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  width: 50vw;
+  margin-left: 1.1em;
+  margin-top: 1em;
+  padding: 1em;
+  color: rgba(0, 0, 0, 0.75);
+}
+.dropdown-btn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.dropdown-btn i {
+  padding-left: 1em;
+}
+
+.dropdown-list {
+  position: absolute;
+  list-style: none;
+  left: 1.1em;
+  margin-top: 0.5em;
+  padding: 1em 0;
+  background-color: white;
+}
+
+.dropdown-list li {
+  text-decoration: none;
+  min-height: 2em;
+  padding: 0.5em 1em 0.5em 2em;
+  background-color: white;
+  width: 50vw;
+}
+
+.dropdown-list li:hover {
+  background-color: rgb(244, 244, 244);
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+/* Country Styles */
+.country-container {
+  display: grid;
+  gap: 1em;
+  padding: 1em;
+}
+
+.country {
+  max-width: 250px;
+  background-color: white;
+  padding-bottom: 2em;
+}
+
+.country h1,
+.country p {
+  padding: 0.3em 1rem;
+}
+.country h1 {
+  font-size: 1.2em;
+  padding-top: 0.8em;
+  padding-bottom: 0.5em;
+}
+
+.country-bold {
+  font-weight: 600;
+  padding-right: 0.5em;
+}
+.country p {
+  font-size: 0.8em;
+}
