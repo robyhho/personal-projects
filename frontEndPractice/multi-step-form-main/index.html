@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Multi-step form</title>
+
+
+<body>
+  <header>
+    <div class="circle active">1</div>
+    <div class="circle">2</div>
+    <div class="circle">3</div>
+    <div class="circle">4</div>
+  </header>
+  <main>
+    <h1>Personal info</h1>
+    <h2>Please provide oyur name, email address, and phone number.</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" placeholder="e.g. Stephen King" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" placeholder="e.g. stephenking@lorem.com" id="email" name="email" required />
+      <label for="number">Phone Number</label>
+      <input type="number" placeholder="e.g. +1 234 567 890 " id="number" name="number" required />
+  </main>
+</body>
+
+</html>

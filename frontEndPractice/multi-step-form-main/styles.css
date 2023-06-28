@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+
+body {
+  background-color: lightblue;
+}
+
+/* Header Styles */
+header {
+  background-image: url("./assets/images/bg-sidebar-mobile.svg");
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 200px;
+  padding-top: 50px;
+  gap: 1em;
+}
+
+header div {
+  border: 1px solid white;
+  border-radius: 1000000px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.1em;
+  padding: 5px 15px;
+  color: white;
+}
+
+header .active {
+  background-color: lightblue;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 20%;
+  background-color: white;
+  width: 90vw;
+  margin-left: 5%;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+main h1 {
+  color: darkblue;
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+}
+
+main h2 {
+  color: grey;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+form label {
+  color: teal;
+  padding-bottom: 0.3em;
+}
+
+form input {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
